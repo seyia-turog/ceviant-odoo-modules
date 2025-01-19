@@ -2,9 +2,9 @@
     'name': 'Ledger Sync',
     'version': '2.0.0',
     'category': 'Accounting',
-    'summary': 'For handling ledger sync transactions',
+    'summary': 'For handling ledger transactions',
     'description': 'This module provides a custom API endpoint for handling ledger transactions.',
-    'author': 'TUROG Technologies',
+    'author': 'Turog',
     'depends': ['account'],
     'data': [
         'security/ir.model.access.csv',

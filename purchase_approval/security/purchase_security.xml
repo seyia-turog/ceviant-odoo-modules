@@ -1,0 +1,8 @@
+<odoo>
+    <record id="group_line_manager" model="res.groups">
+        <field name="name">Line Manager</field>
+    </record>
+    <record id="group_internal_control" model="res.groups">
+        <field name="name">Internal Control</field>
+    </record>
+</odoo>

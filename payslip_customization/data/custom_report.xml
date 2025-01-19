@@ -1,0 +1,10 @@
+<odoo>
+    <record id="action_report_payslip_custom" model="ir.actions.report">
+        <field name="name">Custom Payslip</field>
+        <field name="model">hr.payslip</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">hr_payroll_community.report_payslip</field> <!-- Use the original report's name -->
+        <field name="binding_model_id" ref="hr_payroll_community.model_hr_payslip"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

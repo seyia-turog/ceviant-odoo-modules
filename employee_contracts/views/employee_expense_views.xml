@@ -1,0 +1,18 @@
+<!--<odoo>-->
+<!--    <record id="hr_employee_view_form_inherit" model="ir.ui.view">-->
+<!--    <field name="name">hr.employee.view.form.inherit</field>-->
+<!--    <field name="model">hr.employee</field>-->
+<!--    <field name="inherit_id" ref="hr.view_employee_form"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--        &lt;!&ndash; Make the managers group visible and insert the expense_manager_id field &ndash;&gt;-->
+<!--        <xpath expr="//group[@name='managers']" position="attributes">-->
+<!--            <attribute name="invisible">0</attribute>-->
+<!--        </xpath>-->
+
+<!--        &lt;!&ndash; Insert expense_manager_id field inside the managers group &ndash;&gt;-->
+<!--        <xpath expr="//group[@name='managers']" position="inside">-->
+<!--            <field name="expense_manager_id" string="Expense Manager"/>-->
+<!--        </xpath>-->
+<!--    </field>-->
+<!--</record>-->
+<!--</odoo>-->

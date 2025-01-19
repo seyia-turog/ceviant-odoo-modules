@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_order_line_manager,access_purchase_order_line_manager,purchase.model_purchase_order,custom_employee_contracts.group_line_manager,1,1,1,0
+access_purchase_order_internal_control,access_purchase_order_internal_control,purchase.model_purchase_order,custom_employee_contracts.group_internal_control,1,1,1,0

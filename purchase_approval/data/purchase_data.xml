@@ -1,0 +1,32 @@
+<!--<odoo>-->
+<!--    <data>-->
+<!--        &lt;!&ndash; Define the custom Employees category &ndash;&gt;-->
+<!--        <record id="category_employees" model="res.partner.category">-->
+<!--            <field name="name">Employees</field>-->
+<!--        </record>-->
+<!--        &lt;!&ndash; Line Manager Group &ndash;&gt;-->
+<!--        <record id="group_line_manager" model="res.groups">-->
+<!--            <field name="name">Line Manager</field>-->
+<!--            <field name="category_id" ref="category_employees"/>-->
+<!--            <field name="users" eval="[(4, ref('base.user_admin'))]"/>-->
+<!--            <field name="implied_ids" eval="[(4, ref('purchase.group_purchase_user'))]"/>-->
+<!--            <field name="comment">Approves purchase orders at the Line Manager level.</field>-->
+<!--        </record>-->
+<!--        &lt;!&ndash; Internal Control Group &ndash;&gt;-->
+<!--        <record id="group_internal_control" model="res.groups">-->
+<!--            <field name="name">Internal Control</field>-->
+<!--            <field name="category_id" ref="category_employees"/>-->
+<!--            <field name="users" eval="[(4, ref('base.user_admin'))]"/>-->
+<!--            <field name="implied_ids" eval="[(4, ref('purchase.group_purchase_user'))]"/>-->
+<!--            <field name="comment">Approves purchase orders at the Internal Control level.</field>-->
+<!--        </record>-->
+<!--        &lt;!&ndash; Managing Director Group &ndash;&gt;-->
+<!--        <record id="group_managing_director" model="res.groups">-->
+<!--            <field name="name">Managing Director</field>-->
+<!--            <field name="category_id" ref="category_employees"/>-->
+<!--            <field name="users" eval="[(4, ref('base.user_admin'))]"/>-->
+<!--            <field name="implied_ids" eval="[(4, ref('purchase.group_purchase_user'))]"/>-->
+<!--            <field name="comment">Approves purchase orders at the Managing Director level.</field>-->
+<!--        </record>-->
+<!--    </data>-->
+<!--</odoo>-->

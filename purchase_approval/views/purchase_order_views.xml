@@ -1,0 +1,26 @@
+<odoo>
+    <record id="view_purchase_order_form_custom" model="ir.ui.view">
+        <field name="name">purchase.order.form.custom</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//button[@id='draft_confirm']" position="replace"/>
+            <xpath expr="//button[@id='bid_confirm']" position="replace"/>
+
+            <xpath expr="//header" position="inside">
+                <button name="action_submit_for_approval" string="Submit for Approval" type="object"
+                        class="oe_highlight" invisible="state != 'draft'"/>
+
+                <button name="action_approve" string="Approve" type="object"
+                        class="oe_highlight" invisible="state not in ['line_manager', 'internal_control', 'managing_director']"/>
+            </xpath>
+
+            <xpath expr="//field[@name='state']" position="replace">
+                <field name="state" widget="statusbar"
+                       statusbar_visible="draft,line_manager,internal_control,managing_director,purchase" readonly="1"/>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

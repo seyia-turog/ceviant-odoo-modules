@@ -8,9 +8,9 @@
     'depends': ['account', 'hr_payroll_community'],
     'data': [
         'security/ir.model.access.csv',
-        'data/custom_report.xml',
-        'data/payslip_reports.xml',
-        'views/payslip_view.xml',
+        # 'data/custom_report.xml',
+        # 'data/payslip_reports.xml',
+        # 'views/payslip_view.xml',
         'data/cron_jobs.xml',
     ],
     'installable': True,

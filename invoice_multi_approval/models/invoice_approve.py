@@ -71,3 +71,11 @@ class InvoiceApprove(models.Model):
             super(InvoiceApprove, move).action_post()
 
             move.write({'state': 'posted'})
+    def action_refuse(self):
+        """Refuse the invoice and move it back to draft state."""
+        for move in self:
+            if move.state not in ['finance_approval', 'md_approval']:
+                raise UserError(_("You can only refuse the invoice at the approval stages."))
+            move.write({'state': 'draft'})
+            _logger.info(f"Invoice {move.name} has been refused and sent back to draft.")
+

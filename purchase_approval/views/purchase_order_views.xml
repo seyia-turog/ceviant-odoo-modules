@@ -14,6 +14,9 @@
 
                 <button name="action_approve" string="Approve" type="object"
                         class="oe_highlight" invisible="state not in ['line_manager', 'internal_control', 'managing_director']"/>
+
+                <button name="action_refuse" string="Refuse" type="object"
+                        class="oe_highlight" invisible="state not in ['line_manager', 'internal_control', 'managing_director']"/>
             </xpath>
 
             <xpath expr="//field[@name='state']" position="replace">

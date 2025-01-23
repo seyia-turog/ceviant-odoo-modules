@@ -10,7 +10,6 @@
         # 'security/ir.model.access.csv',
         # 'security/hr_expense_security.xml',
          'data/expense_approval_groups.xml',
-         'security/record_rules.xml',
     ],
     'installable': True,
     'auto_install': False,

@@ -4,11 +4,19 @@
         <field name="model">hr.contract</field>
         <field name="inherit_id" ref="hr_contract.hr_contract_view_form" />
         <field name="arch" type="xml">
+
+            <xpath expr="//sheet" position="before">
+                <group string="Probation Details">
+                    <field name="probation_start_date"/>
+                    <field name="probation_end_date"/>
+                </group>
+            </xpath>
+
             <xpath expr="//notebook" position="inside">
                 <page string="Leave Allocation" name="leave_allocation">
                     <field name="leave_allocation_ids" context="{'default_contract_id': active_id}">
                         <tree editable="bottom">
-                            <field name="employee_id" many2one="hr.employee" string="Employee" />
+                            <field name="employee_id" />
                             <field name="holiday_status_id" />
                             <field name="number_of_days" />
                             <field name="date_from" />
@@ -17,8 +25,9 @@
                     </field>
                 </page>
             </xpath>
-            <xpath expr="//field[@name='leave_allocation_ids']" position="attributes">
-                <attribute name="domain">[('state', '=', 'confirmed')]</attribute>
+
+            <xpath expr="//header" position="inside">
+                <button name="action_approve" string="Approve" type="object" class="btn-primary" modifiers="{'invisible': [('state', 'in', ['cancel'])]}"/>
             </xpath>
         </field>
     </record>

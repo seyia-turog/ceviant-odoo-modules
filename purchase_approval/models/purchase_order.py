@@ -54,3 +54,11 @@ class PurchaseOrder(models.Model):
                 order.button_confirm()
             else:
                 raise UserError(_("Approval is not allowed in the current state."))
+
+    def action_refuse(self):
+        """Refuse the order and send it back to the originator (draft state)."""
+        for order in self:
+            if order.state not in ['line_manager', 'internal_control', 'managing_director']:
+                raise UserError(_("You can only refuse an order at the approval stages."))
+            order.write({'state': 'draft'})
+            _logger.info(f"Order {order.name} has been refused and sent back to draft.")

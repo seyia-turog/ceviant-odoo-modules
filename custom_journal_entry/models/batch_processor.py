@@ -87,12 +87,16 @@ class BatchProcessor(models.Model):
                 logging.error(f"No failure queue mapped for routing key '{queue_type}'")
 
     def fetch_and_process_messages(self):
+        host = os.getenv("RABBITMQ_HOST")
+        port = os.getenv("RABBITMQ_PORT")
+        virtual_host = os.getenv("RABBITMQ_VHOST")
+        username = os.getenv("RABBITMQ_USERNAME")
+        password = os.getenv("RABBITMQ_PASSWORD")
+
         """Fetch messages from RabbitMQ (both queues) and process them."""
         connection_parameters = pika.ConnectionParameters(
-            host='rabbitmq',
-            port=5672,
-            virtual_host='/',
-            credentials=pika.PlainCredentials('guest', 'guest')
+            host=host, port=int(port), virtual_host=virtual_host,
+            credentials=pika.PlainCredentials(username, password)
         )
         connection = pika.BlockingConnection(connection_parameters)
         channel = connection.channel()

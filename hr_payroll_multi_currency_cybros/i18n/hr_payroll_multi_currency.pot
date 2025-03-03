@@ -1,0 +1,68 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_payroll_multi_currency
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-21 13:42+0000\n"
+"PO-Revision-Date: 2022-10-21 13:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_payroll_multi_currency
+#: code:addons/hr_payroll_multi_currency/models/hr_payroll_account.py:0
+#: code:addons/hr_payroll_multi_currency/models/hr_payroll_account.py:0
+#, python-format
+msgid "Adjustment Entry"
+msgstr ""
+
+#. module: hr_payroll_multi_currency
+#: model:ir.model.fields,field_description:hr_payroll_multi_currency.field_hr_contract__currency_id
+#: model:ir.model.fields,field_description:hr_payroll_multi_currency.field_hr_payslip__currency_id
+#: model:ir.model.fields,field_description:hr_payroll_multi_currency.field_hr_payslip_line__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: hr_payroll_multi_currency
+#: model:ir.model,name:hr_payroll_multi_currency.model_hr_contract
+msgid "Employee Contract"
+msgstr ""
+
+#. module: hr_payroll_multi_currency
+#: model:ir.model,name:hr_payroll_multi_currency.model_hr_payslip
+msgid "Pay Slip"
+msgstr ""
+
+#. module: hr_payroll_multi_currency
+#: model:ir.model.fields,field_description:hr_payroll_multi_currency.field_hr_payslip__input_line_ids
+msgid "Payslip Inputs"
+msgstr ""
+
+#. module: hr_payroll_multi_currency
+#: model:ir.model,name:hr_payroll_multi_currency.model_hr_payslip_line
+msgid "Payslip Line"
+msgstr ""
+
+#. module: hr_payroll_multi_currency
+#: code:addons/hr_payroll_multi_currency/models/hr_payroll_account.py:0
+#, python-format
+msgid "Payslip of %s"
+msgstr ""
+
+#. module: hr_payroll_multi_currency
+#: code:addons/hr_payroll_multi_currency/models/hr_payroll_account.py:0
+#, python-format
+msgid "The Expense Journal \"%s\" has not properly configured the Credit Account!"
+msgstr ""
+
+#. module: hr_payroll_multi_currency
+#: code:addons/hr_payroll_multi_currency/models/hr_payroll_account.py:0
+#, python-format
+msgid "The Expense Journal \"%s\" has not properly configured the Debit Account!"
+msgstr ""

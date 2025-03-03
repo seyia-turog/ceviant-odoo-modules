@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Payslip form -->
+    <record model="ir.ui.view" id="view_hr_payslip_inherit_form_multi">
+        <field name="name">hr.payslip.inherit.form.multi.currency</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="hr_payroll_community.hr_payslip_view_form"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="currency_id" groups="base.group_multi_currency" options="{'no_create': True}"/>
+                <field name="original_rate"/>
+            </field>
+
+            <xpath expr="//field[@name='line_ids']//tree//field[@name='amount']" position="after">
+                <field name="currency_id"/>
+            </xpath>
+
+            <xpath expr="//field[@name='details_by_salary_rule_category_ids']//tree//field[@name='total']" position="after">
+                <field name="currency_id"/>
+            </xpath>
+
+        </field>
+    </record>
+
+
+
+    <!-- Contract form View -->
+
+    <record id="hr_contract_form_inherit_multi" model="ir.ui.view">
+        <field name="name">hr.contract.view.form.inherit</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+            <field name="currency_id" position="attributes">
+                <attribute name="invisible">0</attribute>
+                <attribute name="groups">base.group_multi_currency</attribute>
+                <attribute name="options">{'no_create': True}</attribute>
+            </field>
+        </field>
+    </record>
+
+
+    <!-- Payslip line view -->
+    <record id="view_hr_payslip_line_tree_inherit_payroll_multi_currency" model="ir.ui.view">
+        <field name="name">hr.payslip.line.tree.inherit.payroll.multi.currency</field>
+        <field name="model">hr.payslip.line</field>
+        <field name="inherit_id" ref="hr_payroll_community.hr_payslip_line_view_tree"/>
+        <field name="arch" type="xml">
+            <field name="total" position="before">
+                <field name="currency_id"/>
+            </field>
+        </field>
+    </record>
+</odoo>

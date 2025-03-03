@@ -5,10 +5,12 @@
     'summary': 'Payslip Customization',
     'description': 'This module provides a custom API endpoint for handling ledger transactions.',
     'author': 'Ceviant',
-    'depends': ['account', 'hr_payroll_community'],
+    'depends': ['account', 'hr_payroll_community', 'hr_payroll_multi_currency_cybros'],
     'data': [
         'data/custom_report.xml',
         'data/payslip_reports.xml',
+        'data/report_payslipdetails_templates.xml',
+        'data/report_payslip_templates.xml',
         'views/payslip_view.xml',
 
     ],

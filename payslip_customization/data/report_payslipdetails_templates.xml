@@ -1,12 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <template id="report_payslip_details_inherit_multi_currency" inherit_id="hr_payroll_community.report_payslipdetails">
-        <span t-esc="h['total']" position="replace">
-            <span t-esc="h['total']" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
-        </span>
-        <span t-esc="p.get('total', 0)" position="replace">
-            <span t-esc="p.get('total', 0)"
-                  t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
-        </span>
-    </template>
-</odoo>
+<xpath expr="//span[t-esc='h[\'total\']']" position="replace">
+    <span t-esc="h['total']" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+</xpath>
+
+<xpath expr="//span[t-esc='p.get(\'total\', 0)']" position="replace">
+    <span t-esc="p.get('total', 0)" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+</xpath>

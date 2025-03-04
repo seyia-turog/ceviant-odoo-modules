@@ -9,10 +9,9 @@
     'data': [
         'data/custom_report.xml',
         'data/payslip_reports.xml',
-        'data/report_payslipdetails_templates.xml',
         'data/report_payslip_templates.xml',
+        'data/report_payslipdetails_templates.xml',
         'views/payslip_view.xml',
-
     ],
     'installable': True,
     'application': False,

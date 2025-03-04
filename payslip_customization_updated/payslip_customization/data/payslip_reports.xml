@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Template Modification from File 1 -->
+        <template id="report_payslip_inherit_multi_currency" inherit_id="hr_payroll_community.report_payslip">
+            <span t-esc="line.amount" position="replace">
+                <span t-esc="line.amount" t-options='{"widget": "monetary", "display_currency": o.contract_id.currency_id}'/>
+            </span>
+            <span t-esc="line.total" position="replace">
+                <span class="text-right" t-esc="line.total" t-options='{"widget": "monetary", "display_currency": o.contract_id.currency_id, "text-align": "right"}'/>
+            </span>
+        </template>
+
+        <!-- Custom Payslip Report -->
+        <template id="custom_payslip_report" inherit_id="hr_payroll_community.report_payslip">
+            <xpath expr="//table[@class='table table-sm']" position="replace">
+                <table class="table table-sm" style="border-collapse: collapse; border: 1px solid #ddd; width: 100%;">
+                    <thead>
+                        <tr style="background-color: #b4b4b1; border-bottom: 1px solid #ddd;">
+                            <th style="border: 1px solid #ddd;">Earnings</th>
+                            <th style="border: 1px solid #ddd;">Allowance</th>
+                            <th style="border: 1px solid #ddd;">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr t-foreach="o.line_ids.filtered(lambda line: line.appears_on_payslip and line.salary_rule_id.category_id.parent_id.name != 'Deduction' and line.salary_rule_id.code not in ['GROSS', 'NET'])" t-as="line">
+                            <td style="border: 1px solid #ddd;"><span t-field="line.salary_rule_id.code"/></td>
+                            <td style="border: 1px solid #ddd;"><span t-field="line.salary_rule_id.name"/></td>
+                            <td style="border: 1px solid #ddd;">
+                                <span t-esc="line.amount" t-options='{"widget": "monetary", "display_currency": o.contract_id.currency_id}'/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-sm" style="border-collapse: collapse; border: 1px solid #ddd; width: 100%; margin-top: 20px;">
+                    <thead>
+                        <tr style="background-color: #b4b4b1; border-bottom: 1px solid #ddd;">
+                            <th style="border: 1px solid #ddd;">Deductions</th>
+                            <th style="border: 1px solid #ddd;">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr t-foreach="o.line_ids.filtered(lambda line: line.appears_on_payslip and line.salary_rule_id.category_id.parent_id.name == 'Deduction')" t-as="line">
+                            <td style="border: 1px solid #ddd;"><span t-field="line.salary_rule_id.name"/></td>
+                            <td style="border: 1px solid #ddd;">
+                                <span t-esc="line.amount" t-options='{"widget": "monetary", "display_currency": o.contract_id.currency_id}'/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-sm" style="border-collapse: collapse; border: 1px solid #ddd; width: 100%; margin-top: 20px;">
+                    <thead>
+                        <tr style="background-color: #b4b4b1; border-bottom: 1px solid #ddd;">
+                            <th style="border: 1px solid #ddd;">Total Earnings</th>
+                            <th style="border: 1px solid #ddd;">Total Deductions</th>
+                            <th style="border: 1px solid #ddd;">Net Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border: 1px solid #ddd; font-weight: bold;">
+                                <span t-esc="o.line_ids.filtered(lambda line: line.salary_rule_id.code == 'GROSS').mapped('amount')[0] if o.line_ids.filtered(lambda line: line.salary_rule_id.code == 'GROSS') else 0.0" t-options='{"widget": "monetary", "display_currency": o.contract_id.currency_id}'/>
+                            </td>
+                            <td style="border: 1px solid #ddd; font-weight: bold;">
+                                <span t-esc="sum(o.line_ids.filtered(lambda line: line.appears_on_payslip and line.salary_rule_id.category_id.parent_id.name == 'Deduction').mapped('amount')) if o.line_ids.filtered(lambda line: line.appears_on_payslip and line.salary_rule_id.category_id.parent_id.name == 'Deduction') else 0.0" t-options='{"widget": "monetary", "display_currency": o.contract_id.currency_id}'/>
+                            </td>
+                            <td style="border: 1px solid #ddd; font-weight: bold;">
+                                <span t-esc="o.line_ids.filtered(lambda line: line.salary_rule_id.code == 'NET').mapped('amount')[0] if o.line_ids.filtered(lambda line: line.salary_rule_id.code == 'NET') else 0.0" t-options='{"widget": "monetary", "display_currency": o.contract_id.currency_id}'/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </xpath>
+        </template>
+    </data>
+</odoo>

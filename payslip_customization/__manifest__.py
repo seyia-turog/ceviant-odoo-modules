@@ -3,7 +3,7 @@
     'version': '2.0.0',
     'category': 'Employees',
     'summary': 'Payslip Customization',
-    'description': 'This module provides a custom Payslip Report.',
+    'description': 'This module provides a custom payslip report.',
     'author': 'Ceviant',
     'depends': ['account', 'hr_payroll_community', 'hr_payroll_multi_currency_cybros'],
     'data': [

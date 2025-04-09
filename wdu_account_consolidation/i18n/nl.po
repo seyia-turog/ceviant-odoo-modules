@@ -1,0 +1,1611 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* wdu_account_consolidation
+# 
+# Translators:
+# Erwin van der Ploeg <erwin@odooexperts.nl>, 2023
+# Wil Odoo, 2024
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-13 10:41+0000\n"
+"PO-Revision-Date: 2023-10-26 23:10+0000\n"
+"Last-Translator: Wil Odoo, 2024\n"
+"Language-Team: Dutch (https://app.transifex.com/odoo/teams/41243/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__account_ids_count
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__chart_account_ids_count
+msgid "# Accounts"
+msgstr "# Rekeningen"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__group_ids_count
+msgid "# Groups"
+msgstr "# Groepen"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__journal_ids_count
+msgid "# Journals"
+msgstr "# Dagboeken"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__period_ids_count
+msgid "# Periods"
+msgstr "# Periodes"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "% Control"
+msgstr "% Controle"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "% Ownership"
+msgstr "% Eigenaar"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/report/builder/abstract.py:0
+#, python-format
+msgid "%s (%s Currency Conversion Method)"
+msgstr "%s (%s Valutaconversiemethode)"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/consolidation_period.py:0
+#, python-format
+msgid "%s Consolidated Accounting"
+msgstr "%s Geconsolideerde boekhouding"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_composition_form
+msgid "&amp;nbsp;"
+msgstr "&amp;nbsp;"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "(Re)Compute"
+msgstr "(Opnieuw) berekenen"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_kanban
+msgid "(Re)compute"
+msgstr "(Opnieuw) berekenen"
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/components/move_line_list/move_line_list.xml:0
+#: code:addons/wdu_account_consolidation/static/src/components/move_line_list/move_line_list.xml:0
+#, python-format
+msgid ") and the consolidated company ("
+msgstr ") en het geconsolideerd bedrijf ("
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/components/move_line_list/move_line_list.xml:0
+#, python-format
+msgid ") have different currencies and the company is consolidated at"
+msgstr ") hebben verschillende valuta en het bedrijf wordt geconsolideerd op"
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/components/move_line_list/move_line_list.xml:0
+#, python-format
+msgid ") have different currencies."
+msgstr ") hebben verschillende valuta."
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/components/consolidation_report/header.xml:0
+#, python-format
+msgid "/ End Rate: 1"
+msgstr "/ Eindkoers: 1"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_composition_form
+msgid "<span class=\"o_form_label oe_inline\">%</span>"
+msgstr "<span class=\"o_form_label oe_inline\">%</span>"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "<span class=\"o_stat_text\">Consolidated Balance</span>"
+msgstr "<span class=\"o_stat_text\">Geconsolideerde balans</span>"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "<span class=\"o_stat_text\">Edit</span>"
+msgstr "<span class=\"o_stat_text\">Bewerken</span>"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_kanban
+msgid "<span role=\"separator\">Actions</span>"
+msgstr "<span role=\"separator\">Acties</span>"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_kanban
+msgid "<span role=\"separator\">View</span>"
+msgstr "<span role=\"separator\">Bekijk</span>"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.constraint,message:wdu_account_consolidation.constraint_consolidation_account_code_uniq
+msgid ""
+"A consolidation account with the same code already exists in this "
+"consolidation."
+msgstr ""
+"Er bestaat al een consolidatierekening met dezelfde code in deze "
+"consolidatie."
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/consolidation_journal.py:0
+#, python-format
+msgid ""
+"A journal entry should only be linked to a company period OR to a analysis "
+"period of another consolidation!"
+msgstr ""
+"Een boeking mag alleen worden gekoppeld aan een bedrijfsperiode OF aan een "
+"analyseperiode van een andere consolidatie!"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_account_account
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__line_ids
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_group_form
+msgid "Account"
+msgstr "Rekening"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_res_company__wdu_account_consolidation_currency_is_different
+msgid "Account Consolidation Currency Is Different"
+msgstr "Valuta voor rekeningconsolidatie is anders"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding,name:wdu_account_consolidation.onboarding_onboarding_wdu_account_consolidation_dashboard
+msgid "Account Consolidation Dashboard Onboarding"
+msgstr "Onboarding Dashboard rekening consolidatie"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_group_tree
+msgid "Account Group"
+msgstr "Rekeninggroep"
+
+#. module: wdu_account_consolidation
+#: model:ir.actions.act_window,name:wdu_account_consolidation.consolidation_group_action
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__group_ids
+#: model:ir.ui.menu,name:wdu_account_consolidation.menu_consolidation_configuration_account_sections
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_group_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_group_tree
+msgid "Account Groups"
+msgstr "Rubrieken"
+
+#. module: wdu_account_consolidation
+#: model:ir.actions.act_window,name:wdu_account_consolidation.account_mapping_action
+#: model:ir.actions.act_window,name:wdu_account_consolidation.account_mapping_from_period_action
+msgid "Account Mapping"
+msgstr "Vervangingstabel grootboekrekeningen"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/consolidation_coa.py:0
+#, python-format
+msgid "Account Mapping: %(chart)s"
+msgstr "Vervangingstabel: %(chart)s"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/res_company.py:0
+#, python-format
+msgid "Account Mapping: %(company)s"
+msgstr "Vervangingstabel: %(company)s"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/consolidation_period.py:0
+#, python-format
+msgid "Account Mapping: %s (for %s)"
+msgstr "Vervangingstabel: %s (voor %s)"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_form
+msgid "Account Name"
+msgstr "Rekeningnaam"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.account_mapping_search
+msgid "Account with Entries"
+msgstr "Rekening met boekingen"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__account_ids
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_tree
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "Accounts"
+msgstr "Rekeningen"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_res_company__consolidation_color
+msgid "Accounts color"
+msgstr "Kleur van rekeningen"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__message_needaction
+msgid "Action Needed"
+msgstr "Actie gevraagd"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_search
+msgid "Active"
+msgstr "Actief"
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/views/trial_balance_grid/trial_balance_grid_controller.js:0
+#: code:addons/wdu_account_consolidation/static/src/views/trial_balance_grid/trial_balance_grid_controller.xml:0
+#, python-format
+msgid "Add a column"
+msgstr "Voeg een kolom toe"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_form
+msgid "Additional Information"
+msgstr "Aanvullende informatie"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form
+msgid "Advanced Consolidation"
+msgstr "Geavanceerde consolidatie"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.account_mapping_search
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_search_mapping
+msgid "Already Mapped"
+msgstr "Al gemapt"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__amount
+msgid "Amount"
+msgstr "Bedrag"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/consolidation_coa.py:0
+#, python-format
+msgid ""
+"An account group can only have accounts or other groups children but not "
+"both!"
+msgstr ""
+"Een rekeninggroep kan alleen rekeningen of andere onderliggende groepen "
+"hebben, maar niet beide!"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__period_id
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "Analysis Period"
+msgstr "Analyseperiode"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period_composition__using_period_id
+msgid "Analysis Period Using This"
+msgstr "Analyseperiode met behulp hiervan"
+
+#. module: wdu_account_consolidation
+#: model:ir.actions.act_window,name:wdu_account_consolidation.analysis_period_config_action
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__period_ids
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_tree
+msgid "Analysis Periods"
+msgstr "Analyseperiodes"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,title:wdu_account_consolidation.onboarding_onboarding_step_create_consolidation_period
+msgid "Analysis period"
+msgstr "Analyseperiode"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,done_text:wdu_account_consolidation.onboarding_onboarding_step_create_consolidation_period
+msgid "Analysis period created!"
+msgstr "Analyseperiode aangemaakt!"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form_onboarding
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form_onboarding
+msgid "Apply"
+msgstr "Toepassen"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__message_attachment_count
+msgid "Attachment Count"
+msgstr "Aantal bijlagen"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_search
+msgid "Auto-generated"
+msgstr "Automatisch gegenereerd"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__auto_generated
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__auto_generated
+msgid "Automatically Generated"
+msgstr "Automatisch gegenereerde"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__currency_rate_avg
+msgid "Average Currency Rate"
+msgstr "Gemiddelde wisselkoers"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields.selection,name:wdu_account_consolidation.selection__consolidation_account__currency_mode__avg
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_form
+msgid "Average Rate"
+msgstr "Gemiddelde koers"
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/components/consolidation_report/header.xml:0
+#, python-format
+msgid "Avg Rate: 1"
+msgstr "Gem koers: 1"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__balance
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_form
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form_onboarding
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form_onboarding
+msgid "Cancel"
+msgstr "Annuleren"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__chart_id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__chart_id
+msgid "Chart"
+msgstr "Grafiek"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,title:wdu_account_consolidation.onboarding_onboarding_step_setup_ccoa
+msgid "Chart of Accounts"
+msgstr "Grootboekschema"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_kanban
+msgid "Chart of accounts"
+msgstr "Grootboekschema"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,done_text:wdu_account_consolidation.onboarding_onboarding_step_setup_ccoa
+msgid "Chart of accounts set!"
+msgstr "Grootboekschema ingesteld!"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_tree
+msgid "Charts"
+msgstr "Grafieken"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__child_ids
+msgid "Children"
+msgstr "Onderliggende"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "Close"
+msgstr "Afsluiten"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_kanban
+msgid "Close period"
+msgstr "Sluit periode"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields.selection,name:wdu_account_consolidation.selection__consolidation_period__state__closed
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_search
+msgid "Closed"
+msgstr "Gesloten"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields.selection,name:wdu_account_consolidation.selection__consolidation_account__currency_mode__end
+msgid "Closing Rate"
+msgstr "Slotkoers"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__code
+msgid "Code"
+msgstr "Code"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_account_account__consolidation_color
+msgid "Color"
+msgstr "Kleur"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__color
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__color
+msgid "Color Index"
+msgstr "Kleurindex"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_res_company
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__company_ids
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__company_ids
+msgid "Companies"
+msgstr "Bedrijven"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__company_id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_rate__company_id
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_line_search
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.trial_balance_grid_search
+msgid "Company"
+msgstr "Bedrijf"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__currency_company_id
+msgid "Company Currency"
+msgstr "Bedrijfsvaluta"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__company_name
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form
+msgid "Company Name"
+msgstr "Bedrijfsnaam"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__company_period_id
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_form
+msgid "Company Period"
+msgstr "Bedrijfsperiode"
+
+#. module: wdu_account_consolidation
+#: model:ir.actions.act_window,name:wdu_account_consolidation.consolidation_company_period_action
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__company_period_ids
+#: model:ir.ui.menu,name:wdu_account_consolidation.menu_consolidation_configuration_company_periods
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_tree
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "Company Periods"
+msgstr "Bedrijfsperiodes"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__company_unmapped_accounts_counts
+msgid "Company Unmapped Accounts Counts"
+msgstr "Aantal niet-toegewezen rekeningen van het bedrijf"
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/components/consolidation_report/filters/filters.xml:0
+#, python-format
+msgid "Comparison:"
+msgstr "Vergelijking:"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period_composition__composed_period_id
+msgid "Composed Analysis Period"
+msgstr "Samengestelde analyseperiode"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period_composition__composed_chart_currency_id
+msgid "Composed Consolidation Currency"
+msgstr "Samengestelde consolidatievaluta"
+
+#. module: wdu_account_consolidation
+#: model:ir.ui.menu,name:wdu_account_consolidation.menu_consolidation_configuration
+msgid "Configuration"
+msgstr "Configuratie"
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/components/consolidation_report/header.xml:0
+#, python-format
+msgid "Conso Rate:"
+msgstr "Conso ratio:"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__account_id
+msgid "Consolidated Account"
+msgstr "Geconsolideerde rekening"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.account_mapping_tree
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_form
+msgid "Consolidated Accounts"
+msgstr "Geconsolideerde rekeningen"
+
+#. module: wdu_account_consolidation
+#: model:account.report,name:wdu_account_consolidation.consolidated_balance_report
+#: model:ir.actions.client,name:wdu_account_consolidation.trial_balance_report_action
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_kanban
+msgid "Consolidated Balance"
+msgstr "Geconsolideerde balans"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form
+msgid "Consolidated Companies"
+msgstr "Geconsolideerde bedrijven"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__parents_ids
+msgid "Consolidated In"
+msgstr "Geconsolideerd in"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__used_in_ids
+msgid "Consolidated in"
+msgstr "Geconsolideerd in"
+
+#. module: wdu_account_consolidation
+#: model:ir.actions.act_window,name:wdu_account_consolidation.consolidation_chart_action
+#: model:ir.actions.act_window,name:wdu_account_consolidation.consolidation_chart_action_onboarding
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__chart_id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__chart_id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__chart_id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_rate__chart_id
+#: model:ir.ui.menu,name:wdu_account_consolidation.menu_consolidation
+#: model:ir.ui.menu,name:wdu_account_consolidation.menu_consolidation_configuration_charts
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_search
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_tree
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_group_search
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_search
+msgid "Consolidation"
+msgstr "Consolidatie"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_account_account__consolidation_account_ids
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__account_ids
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_group_form
+msgid "Consolidation Account"
+msgstr "Consolidatie rekening"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_account_account__consolidation_account_chart_filtered_ids
+msgid "Consolidation Account Chart Filtered"
+msgstr "Grafiek consolidatierekening gefilterd"
+
+#. module: wdu_account_consolidation
+#: model:ir.actions.act_window,name:wdu_account_consolidation.consolidation_account_action
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__using_ids
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__account_ids
+#: model:ir.ui.menu,name:wdu_account_consolidation.menu_consolidation_configuration_accounts
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_group_form
+msgid "Consolidation Accounts"
+msgstr "Consolidatierekeningen"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_search
+msgid "Consolidation Chart"
+msgstr "Consolidatiediagram"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_consolidation_company_period
+msgid "Consolidation Company Period"
+msgstr "Consolidatie periode"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__currency_chart_id
+msgid "Consolidation Currency"
+msgstr "Consolidatie valuta"
+
+#. module: wdu_account_consolidation
+#: model:ir.actions.act_window,name:wdu_account_consolidation.Consolidation_journal_line_action
+msgid "Consolidation Entries"
+msgstr "Consolidatie invoer"
+
+#. module: wdu_account_consolidation
+#: model:ir.ui.menu,name:wdu_account_consolidation.menu_consolidation_operations_consolidation_entries
+msgid "Consolidation Entry"
+msgstr "Consolidatie invoer"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_consolidation_group
+msgid "Consolidation Group"
+msgstr "Consolidatie groep"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_line_tree
+msgid "Consolidation Items"
+msgstr "Consolidatie items"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_consolidation_journal
+msgid "Consolidation Journal"
+msgstr "Consolidatiedagboek"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_account_move_line__consolidation_journal_line_ids
+msgid "Consolidation Journal Line"
+msgstr "Geconsolideerde boekingsregel"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__consolidation_method
+msgid "Consolidation Method"
+msgstr "Consolidatie methode"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__name
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__chart_name
+msgid "Consolidation Name"
+msgstr "Consolidatie naam"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_consolidation_period
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__composition_id
+msgid "Consolidation Period"
+msgstr "Consolidatie periode"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_consolidation_period_composition
+msgid "Consolidation Period Composition"
+msgstr "Consolidatie periode"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_consolidation_rate
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__rate_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__rate_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period_composition__rate_consolidation
+msgid "Consolidation Rate"
+msgstr "Consolidatie ratio"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "Consolidation Rate (%)"
+msgstr "Consolidatie ratio (%)"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__rate_ids
+msgid "Consolidation Rates"
+msgstr "Consolidatiepercentages"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_consolidation_account
+msgid "Consolidation account"
+msgstr "Consolidatie rekening"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_consolidation_chart
+msgid "Consolidation chart"
+msgstr "Consolidatiediagram"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__line_ids
+msgid "Consolidation items"
+msgstr "Consolidatie items"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_consolidation_journal_line
+msgid "Consolidation journal line"
+msgstr "Geconsolideerde boekingsregel"
+
+#. module: wdu_account_consolidation
+#: model:res.groups,name:wdu_account_consolidation.group_consolidation_user
+msgid "Consolidation user"
+msgstr "Consolidatie gebruiker"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__conversion_rate
+msgid "Conversion Rate"
+msgstr "Conversieratio"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,button_text:wdu_account_consolidation.onboarding_onboarding_step_create_consolidation_period
+msgid "Create"
+msgstr "Aanmaken"
+
+#. module: wdu_account_consolidation
+#: model:ir.actions.act_window,name:wdu_account_consolidation.consolidation_period_action_onboarding
+msgid "Create First Period"
+msgstr "Maak eerste periode aan"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,description:wdu_account_consolidation.onboarding_onboarding_step_create_consolidation_period
+msgid "Create your first analysis period & set the currency rates."
+msgstr "Maak je eerste analyseperiode & bepaal de wisselkoersen."
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__create_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__create_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__create_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__create_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__create_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__create_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__create_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period_composition__create_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_rate__create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__create_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__create_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__create_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__create_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__create_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__create_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__create_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period_composition__create_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_rate__create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__currencies_are_different
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__currencies_are_different
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period_composition__currencies_are_different
+msgid "Currencies Are Different"
+msgstr "Valuta's zijn verschillend"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_composition_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__currency_amount
+msgid "Currency Amount"
+msgstr "Bedrag in valuta"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__currency_mode
+msgid "Currency Conversion Method"
+msgstr "Valutaconversiemethode"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period_composition__currency_rate
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_composition_form
+msgid "Currency Rate"
+msgstr "Wisselkoers"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_period_composition__currency_rate
+msgid "Currency rate from composed chart currency to using chart currency"
+msgstr ""
+"Valutakoers van samengestelde grootboekschema-valuta tot gebruik van "
+"grootboekschema-valuta"
+
+#. module: wdu_account_consolidation
+#: model:ir.actions.act_window,name:wdu_account_consolidation.consolidation_period_action
+#: model:ir.ui.menu,name:wdu_account_consolidation.menu_consolidation_home
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__dashboard_sections
+msgid "Dashboard Sections"
+msgstr "Dashboard secties"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_line_tree
+msgid "Date"
+msgstr "Datum"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,button_text:wdu_account_consolidation.onboarding_onboarding_step_setup_consolidation
+msgid "Define"
+msgstr "Definieer"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,description:wdu_account_consolidation.onboarding_onboarding_step_setup_consolidation
+msgid ""
+"Define the companies that should be consolidated & the target currency."
+msgstr ""
+"Bepaal de bedrijven die geconsolideerd moeten worden en de doelvaluta."
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__note
+msgid "Description"
+msgstr "Omschrijving"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__display_dates
+msgid "Display Dates"
+msgstr "Toon datums"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__display_name
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__display_name
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__display_name
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__display_name
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__display_name
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__display_name
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__display_name
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period_composition__display_name
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_rate__display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields.selection,name:wdu_account_consolidation.selection__consolidation_period__state__draft
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_search
+msgid "Draft"
+msgstr "Concept"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/report/trial_balance.py:0
+#, python-format
+msgid "Edit"
+msgstr "Bewerken"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/report/trial_balance.py:0
+#, python-format
+msgid "Edit %s"
+msgstr "Bewerken %s"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__currency_rate_end
+msgid "End Currency Rate"
+msgstr "Einde wisselkoers"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__date_company_end
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__date_analysis_end
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_rate__date_end
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_search
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_search
+msgid "End Date"
+msgstr "Einddatum"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_form
+msgid "End Rate"
+msgstr "Eindratio"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields.selection,name:wdu_account_consolidation.selection__consolidation_company_period__consolidation_method__equity
+msgid "Equity"
+msgstr "Eigen vermogen"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__exclude_journal_ids
+msgid "Exclude Journals"
+msgstr "Uitgesloten dagboeken"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__filtered_used_in_ids
+msgid "Filtered Used In"
+msgstr "Gefilterd gebruikt in"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__message_follower_ids
+msgid "Followers"
+msgstr "Volgers"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Volgers (Relaties)"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__full_name
+msgid "Full Name"
+msgstr "Volledige naam"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields.selection,name:wdu_account_consolidation.selection__consolidation_company_period__consolidation_method__full
+msgid "Full consolidation"
+msgstr "Volledige consolidatie"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__group_id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__group_id
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_search
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_line_search
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.trial_balance_grid_search
+msgid "Group"
+msgstr "Groep"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_group_form
+msgid "Group Name"
+msgstr "Groepsnaam"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form
+msgid "Groups"
+msgstr "Groepen"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__has_message
+msgid "Has Message"
+msgstr "Heeft bericht"
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/components/consolidation_report/filters/filter_extra_options.xml:0
+#, python-format
+msgid "Hierarchy and Subtotals"
+msgstr "Hiërarchie en subtotalen"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields.selection,name:wdu_account_consolidation.selection__consolidation_account__currency_mode__hist
+msgid "Historical Rate"
+msgstr "Historische koers"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form
+msgid "Historical Rates"
+msgstr "Historische koersen"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/res_company.py:0
+#, python-format
+msgid "Historical Rates: %(company)s"
+msgstr "Historische koersen: %(company)s"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_company_period__currency_rate_avg
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_company_period__currency_rate_end
+msgid ""
+"How many units of company currency is needed to get 1 unit of chart currency"
+msgstr ""
+"Hoeveel eenheden van de bedrijfsvaluta zijn er nodig om 1 eenheid van het "
+"grootboekschema-valuta te krijgen"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period_composition__id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_rate__id
+msgid "ID"
+msgstr "ID"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_period__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Indien aangevinkt vragen nieuwe berichten je aandacht."
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_period__message_has_error
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_period__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Indien aangevinkt hebben sommige berichten een leveringsfout."
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_search
+msgid "In The Future"
+msgstr "In de toekomst"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_search
+msgid "In The Past"
+msgstr "In het verleden"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__invert_sign
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__invert_sign
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__invert_sign
+msgid "Invert Balance Sign"
+msgstr "Balansteken omkeren"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__message_is_follower
+msgid "Is Follower"
+msgstr "Is een volger"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__journal_id
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_line_form
+msgid "Journal"
+msgstr "Dagboek"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_account_move_line
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_line_form
+msgid "Journal Item"
+msgstr "Boekingsregel"
+
+#. module: wdu_account_consolidation
+#: model:ir.actions.act_window,name:wdu_account_consolidation.view_account_move_line_filter
+msgid "Journal Items"
+msgstr "Boekingsregels"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__line_ids
+msgid "Journal lines"
+msgstr "Dagboekregels"
+
+#. module: wdu_account_consolidation
+#: model:ir.actions.act_window,name:wdu_account_consolidation.consolidation_journal_action
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__journal_ids
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_tree
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_kanban
+msgid "Journals"
+msgstr "Dagboeken"
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/components/consolidation_report/filters/filters.xml:0
+#, python-format
+msgid "Journals:"
+msgstr "Dagboeken:"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__write_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__write_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__write_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__write_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__write_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__write_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__write_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period_composition__write_uid
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_rate__write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__write_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__write_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__write_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__write_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__write_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__write_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__write_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period_composition__write_date
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_rate__write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_search
+msgid "Manually Created"
+msgstr "Handmatig aangemaakt"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form
+msgid "Map Accounts"
+msgstr "Map rekeningen"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_tree
+msgid "Mapped Accounts"
+msgstr "Gemapte rekeningen"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_search_mapping
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_tree_mapping
+msgid "Mapped In"
+msgstr "Gemapt in"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__message_has_error
+msgid "Message Delivery error"
+msgstr "Bericht afleverfout"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__message_ids
+msgid "Messages"
+msgstr "Berichten"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__move_line_ids
+msgid "Move Line"
+msgstr "Boekingsregel"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__name
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__name
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__name
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_tree
+msgid "Name"
+msgstr "Naam"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.actions.act_window,help:wdu_account_consolidation.account_mapping_action
+msgid ""
+"No accounts have been found. Make sure you have installed a chart of account"
+" for this company or that you have access right to see the accounts of this "
+"company."
+msgstr ""
+"Er zijn geen rekeningen gevonden. Zorg ervoor dat je een grootboekschema "
+"voor dit bedrijf heeft geïnstalleerd of dat je toegang heeft tot de "
+"rekeningen van dit bedrijf."
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.account_mapping_search
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_search_mapping
+msgid "Not Mapped"
+msgstr "Niet gemapt"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields.selection,name:wdu_account_consolidation.selection__consolidation_company_period__consolidation_method__none
+msgid "Not consolidated"
+msgstr "Niet geconsolideerd"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Aantal acties"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__message_has_error_counter
+msgid "Number of errors"
+msgstr "Aantal fouten"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_period__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Aantal berichten die actie vereisen"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_period__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Aantal berichten met leveringsfout"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_onboarding_onboarding
+msgid "Onboarding"
+msgstr "Onboarding"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,step_image_alt:wdu_account_consolidation.onboarding_onboarding_step_create_consolidation_period
+msgid "Onboarding Analysis period"
+msgstr "Onboarding analyseperiode"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,step_image_alt:wdu_account_consolidation.onboarding_onboarding_step_setup_ccoa
+msgid "Onboarding Chart of Accounts"
+msgstr "Onboarding grootboekschema"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_onboarding_onboarding_step
+msgid "Onboarding Step"
+msgstr "Onboardingstap"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,step_image_alt:wdu_account_consolidation.onboarding_onboarding_step_setup_consolidation
+msgid "Onboarding The Scope of Consolidation"
+msgstr "Onboarding Het bereik van de consolidatie"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/consolidation_journal.py:0
+#, python-format
+msgid ""
+"Only one entry by account should be created for a generated journal entry!"
+msgstr ""
+"Er mag slechts één boeking per rekening worden aangemaakt voor een "
+"gegenereerde boeking!"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_search
+msgid "Only the periods containing today"
+msgstr "Alleen de periodes die vandaag bevatten"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_search
+msgid "Only the periods in the future"
+msgstr "Alleen de periodes in de toekomst"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_search
+msgid "Only the periods in the past"
+msgstr "Alleen de periodes uit het verleden"
+
+#. module: wdu_account_consolidation
+#: model:ir.ui.menu,name:wdu_account_consolidation.menu_consolidation_operations
+msgid "Operations"
+msgstr "Bewerkingen"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__originating_currency_id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__journal_originating_currency_id
+msgid "Originating Currency"
+msgstr "Originele valuta"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/report/trial_balance.py:0
+#: code:addons/wdu_account_consolidation/report/trial_balance.py:0
+#, python-format
+msgid "PDF"
+msgstr "PDF"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__parent_id
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_group_search
+msgid "Parent"
+msgstr "Bovenliggend"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__parent_path
+msgid "Parent Path"
+msgstr "Bovenliggend pad"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__period_id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__period_id
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_search
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_search
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_composition_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "Period"
+msgstr "Periode"
+
+#. module: wdu_account_consolidation
+#: model:ir.ui.menu,name:wdu_account_consolidation.menu_consolidation_configuration_analysis_periods
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form
+msgid "Periods"
+msgstr "Periode"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields.selection,name:wdu_account_consolidation.selection__consolidation_company_period__consolidation_method__proportional
+msgid "Proportional consolidation"
+msgstr "Proportionele consolidatie"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_rate__rate
+msgid "Rate"
+msgstr "Hoeveel"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__rate_control
+msgid "Rate Control"
+msgstr "Koerscontrole"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__rate_ownership
+msgid "Rate Ownership"
+msgstr "Deel eigendom"
+
+#. module: wdu_account_consolidation
+#: model:ir.actions.act_window,name:wdu_account_consolidation.consolidation_rate_action
+msgid "Rate Ranges"
+msgstr "Valutabereik"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__rating_ids
+msgid "Ratings"
+msgstr "Beoordelingen"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_kanban
+msgid "Reopen period"
+msgstr "Periode heropenen"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "Reset To Draft"
+msgstr "Terugzetten naar concept"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form
+msgid "Review Chart Of Accounts"
+msgstr "Controleer het grootboekschema"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "SMS fout bij versturen"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,done_text:wdu_account_consolidation.onboarding_onboarding_step_setup_consolidation
+msgid "Scope of Consolidation defined!"
+msgstr "Omvang van de consolidatie gedefinieerd!"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__sequence
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__sequence
+msgid "Sequence"
+msgstr "Reeks"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_form
+msgid "Settings"
+msgstr "Instellingen"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,button_text:wdu_account_consolidation.onboarding_onboarding_step_setup_ccoa
+msgid "Setup"
+msgstr "Instellingen"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,description:wdu_account_consolidation.onboarding_onboarding_step_setup_ccoa
+msgid ""
+"Setup your consolidated accounts and their currency conversion method.\n"
+"                Then map them with the companies accounts."
+msgstr ""
+"Stel je geconsolideerde rekeningen en hun valutaconversiemethode in.\n"
+"Breng ze vervolgens in kaart met de bedrijfsrekeningen."
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_company_period__rate_consolidation
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_company_period__rate_control
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_company_period__rate_ownership
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_period_composition__rate_consolidation
+msgid "Should be between 0 and 100 %"
+msgstr "Tussen 0 en 100 %"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__show_on_dashboard
+msgid "Show On Dashboard"
+msgstr "Toon op dashboard"
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/components/consolidation_report/filters/filter_extra_options.xml:0
+#, python-format
+msgid "Show Zero Balance Accounts"
+msgstr "Toon nulsaldo-regels"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__sign
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__sign
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_group__sign
+msgid "Sign"
+msgstr "Ondertekenen"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_company_period__date_company_begin
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__date_analysis_begin
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_rate__date_start
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_search
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_search
+msgid "Start Date"
+msgstr "Begindatum"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__state
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__state
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_search
+msgid "State"
+msgstr "Status"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form
+msgid "Sub-consolidated Chart"
+msgstr "Subgeconsolideerde grootboekschema"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_account__linked_chart_ids
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__children_ids
+msgid "Sub-consolidations"
+msgstr "Subconsolidatie"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "Sub-consolidations Periods"
+msgstr "Subconsolidatieperioden"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_form
+msgid "Sub-consolidations periods"
+msgstr "Subconsolidatieperioden"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_group_form
+msgid "Subgroups"
+msgstr "Subgroepen"
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/components/move_line_list/move_line_list.xml:0
+#: code:addons/wdu_account_consolidation/static/src/components/move_line_list/move_line_list.xml:0
+#, python-format
+msgid "Take into account that the consolidation ("
+msgstr "Houd er rekening mee dat de consolidatie ("
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/components/move_line_list/move_line_list.xml:0
+#, python-format
+msgid "Take into account that this company is consolidated at"
+msgstr "Houd er rekening mee dat dit bedrijf wordt geconsolideerd op"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_chart__currency_id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal__currency_id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_journal_line__chart_currency_id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__chart_currency_id
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period_composition__using_chart_currency_id
+msgid "Target Currency"
+msgstr "Doel valuta"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/consolidation_period.py:0
+#, python-format
+msgid ""
+"The Composed Analysis Period must be different from the Analysis Period"
+msgstr ""
+"De samengestelde analyseperiode moet verschillen van de analyseperiode"
+
+#. module: wdu_account_consolidation
+#: model:onboarding.onboarding.step,title:wdu_account_consolidation.onboarding_onboarding_step_setup_consolidation
+msgid "The Scope of Consolidation"
+msgstr "Het bereik van de consolidatie"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_company_period_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_period_composition_form
+msgid ""
+"The rate used for the consolidation (basically this rate will multiply the "
+"sum of everything"
+msgstr ""
+"De ratio dat wordt gebruikt voor de consolidatie (in feite zal dit ratio de "
+"som van alles vermenigvuldigen"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_form
+msgid "This journal has been automatically generated on"
+msgstr "Dit dagboek is automatisch gegenereerd op"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/report/builder/abstract.py:0
+#: code:addons/wdu_account_consolidation/report/trial_balance.py:0
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_form
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_line_tree
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_tree
+#, python-format
+msgid "Total"
+msgstr "Totaal"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/report/trial_balance.py:0
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_line_search
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.view_trial_balance_report_graph
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.view_trial_balance_report_grid
+#, python-format
+msgid "Trial Balance"
+msgstr "Proefbalans"
+
+#. module: wdu_account_consolidation
+#: model:ir.model,name:wdu_account_consolidation.model_consolidation_trial_balance_report_handler
+msgid "Trial Balance Custom Handler"
+msgstr "Aangepaste handler voor proefbalans"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/consolidation_period.py:0
+#, python-format
+msgid "Trial Balance: %s"
+msgstr "Proefbalans: %s"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.trial_balance_grid_search
+msgid "Trial balance"
+msgstr "Proefbalans"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.constraint,message:wdu_account_consolidation.constraint_consolidation_period_composition__unique_composition
+msgid ""
+"Two compositions of the same analysis period by the same analysis period "
+"cannot be created"
+msgstr ""
+"Twee samenstellingen van dezelfde analyseperiode voor dezelfde "
+"analyseperiode kunnen niet worden gemaakt"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_journal_form
+msgid "Update"
+msgstr "Bijwerken"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__used_in_composition_ids
+msgid "Used In Composition"
+msgstr "Gebruikt in samenstelling"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_chart__color
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_period__color
+msgid "Used in the kanban view"
+msgstr "Gebruikt in de kanban weergave"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__using_composition_ids
+msgid "Using Composition"
+msgstr "Compositie gebruiken"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,field_description:wdu_account_consolidation.field_consolidation_period__website_message_ids
+msgid "Website Messages"
+msgstr "Websiteberichten"
+
+#. module: wdu_account_consolidation
+#: model:ir.model.fields,help:wdu_account_consolidation.field_consolidation_period__website_message_ids
+msgid "Website communication history"
+msgstr "Website communicatie geschiedenis"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/consolidation_journal.py:0
+#, python-format
+msgid ""
+"When setting a period on a consolidation journal, the selected consolidation"
+" chart for the journal cannot be different from the one of the chosen "
+"period."
+msgstr ""
+"Wanneer je een periode instelt op een consolidatiedagboek, kan het "
+"geselecteerde consolidatiediagram voor het dagboek niet verschillen van die "
+"van de gekozen periode."
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/report/trial_balance.py:0
+#: code:addons/wdu_account_consolidation/report/trial_balance.py:0
+#, python-format
+msgid "XLSX"
+msgstr "XLSX"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_chart_form
+msgid ""
+"You can here define complex consolidations based on other sub-"
+"consolidations, as part of a whole scheme"
+msgstr ""
+"Je kunt hier complexe consolidaties definiëren op basis van andere "
+"subconsolidaties, als onderdeel van een heel schema"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/consolidation_journal.py:0
+#, python-format
+msgid "You can't delete an auto-generated journal entry."
+msgstr "Je kunt een automatisch gegenereerde boeking niet verwijderen."
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/consolidation_journal.py:0
+#: code:addons/wdu_account_consolidation/models/consolidation_journal.py:0
+#, python-format
+msgid "You can't edit an auto-generated journal entry."
+msgstr "Je kunt een automatisch gegenereerde boeking niet bewerken."
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/models/consolidation_journal.py:0
+#, python-format
+msgid "You cannot add journals to a closed period!"
+msgstr "Je kan geen dagboeken toevoegen aan een afgesloten periode!"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_group_form
+msgid "e.g. Profit and Loss"
+msgstr "bijv. Winst & Verlies"
+
+#. module: wdu_account_consolidation
+#: model_terms:ir.ui.view,arch_db:wdu_account_consolidation.consolidation_account_form
+msgid "e.g. Revenue"
+msgstr "bijv. Omzet"
+
+#. module: wdu_account_consolidation
+#. odoo-python
+#: code:addons/wdu_account_consolidation/report/builder/comparison.py:0
+#, python-format
+msgid "n/a"
+msgstr "n/b"
+
+#. module: wdu_account_consolidation
+#. odoo-javascript
+#: code:addons/wdu_account_consolidation/static/src/components/dashboard_widget/dashboard_widget.xml:0
+#, python-format
+msgid "unmapped accounts"
+msgstr "niet gekoppelde rekeningen"
